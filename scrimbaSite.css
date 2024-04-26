@@ -1,0 +1,148 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #404040;
+  margin: 0;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 40px;
+  text-shadow: 0 2px #816fca;
+}
+h2 {
+  font-size: 2.25rem;
+  margin-top: 0.167em;
+  margin-bottom: 0.167em;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #9480e4;
+  text-align: center;
+  color: white;
+}
+strong {
+  color: azure;
+}
+.beta {
+  font-weight: 900;
+  text-transform: uppercase;
+  order: 1;
+}
+img {
+  width: 130px;
+  border-radius: 50%;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2.5em;
+}
+.mainContent,
+.intro {
+  padding-left: 2em;
+  padding-right: 2em;
+  display: flex;
+  flex-direction: column;
+}
+p {
+  font-size: 1.125rem;
+  line-height: 1.35;
+}
+.top-text {
+  font-size: 0.875rem;
+  font-weight: 900;
+  padding-top: 0.25em;
+  border-top: 5px solid;
+  order: -1;
+  margin: 0 auto;
+}
+
+.subheading {
+  font-weight: 900;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+.intro {
+  background-image: url("https://images.pexels.com/photos/4175070/pexels-photo-4175070.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-size: cover;
+  justify-content: space-between;
+  padding-bottom: 1.5em;
+}
+.paraTag {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #858585;
+}
+
+input {
+  font-family: inherit;
+  width: 100%;
+  margin-bottom: 0.75em;
+  padding: 0.5em;
+  border: solid 2px #d1d5db;
+  border-radius: 5px;
+}
+input:focus {
+  outline: none;
+  border-color: #8a71ec;
+  background-color: #e6e8ec;
+}
+button {
+  font-family: inherit;
+  width: 100%;
+  border-radius: 5px;
+  background: #8a71ec;
+  height: 50px;
+  border: none;
+  color: aliceblue;
+  font-weight: 900;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+button:hover,
+button:focus {
+  background-color: #b7a7f6;
+}
+.mainContent p,
+form {
+  max-width: 450px;
+}
+@media (min-width: 576px) {
+  body {
+    display: flex;
+  }
+  .intro,
+  .mainContent {
+    width: 50%;
+  }
+  .intro {
+    min-height: 100vh;
+  }
+  .mainContent {
+    justify-content: center;
+    padding-top: 0;
+  }
+
+  h1 {
+    font-size: 5vw;
+  }
+
+  h2 {
+    font-size: 2.625rem;
+  }
+
+  .beta {
+    font-size: 1.25rem;
+  }
+}
